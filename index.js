@@ -60,6 +60,9 @@ run().catch(console.dir);
 app.get("/", (req, res) => {
   res.send("Running genuse server");
 });
+app.get("/hellow", (req, res) => {
+  res.send("Hellow");
+});
 
 app.listen(port, () => {
   console.log("Running server on", port);
